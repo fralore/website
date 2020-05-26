@@ -1,0 +1,369 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+/* assegniamo raleway a tutto il body
+*/
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+/*
+inserisco il font per il logo
+Satisfy
+*/
+nav .brand-logo {
+  font-family: 'Satisfy', cursive;
+}
+
+/*
+aggiungo selettore a .nav-wrapper
+per aggiungere del padding sx e dx di 50px
+*/
+.nav-wrapper {
+  padding: 0px 50px;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #003554;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #003554;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+/*
+cancello la regola che nn ha senso
+  .parallax-container .section {
+    width: 100%;
+  }
+
+*/
+
+/*
+definisco una rule per l'altezza della section-intro
+e larghezza della sezione al 100% di modo che occupino tutto lo spazio
+*/
+.section-intro {
+  height: 100%;
+  width: 100%;
+}
+
+/*
+creo margine superiore all'header
+*/
+.header {
+  margin-top: 15%;
+}
+
+/*
+creo rules su .header-subtitle
+*/
+.header-subtitle {
+  margin-top: 5%;
+  font-size: 1.3em;
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+
+  /*
+  aggiungo selettore a .nav-wrapper
+  per aggiungere del padding sx e dx di 10px
+  */
+  .nav-wrapper {
+    padding: 0px 10px;
+  }
+}
+
+/*
+aggiungo un margine superiore a sezione esperienza
+per evitare che si sovrapponga con navbar
+*/
+.col-esperienza {
+  margin-top: 60px;
+  /* aggiungo del margine inferiore alla colonna esperienza */
+  margin-bottom: 100px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+  color:RGB(5,130,202);
+}
+
+/*
+ridimensiono h5 su #esperienza
+*/
+#esperienza h5 {
+  font-size: 1.3em;
+  /* aggiungo interlinea */
+  line-height: 1.6em;
+}
+
+/*
+definisco una rule per l'altezza della section-progetti
+e larghezza della sezione al 100% di modo che occupino tutto lo spazio
+*/
+.section-progetti {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px
+}
+
+/*
+formattazione dell'icona emoji_objects
+*/
+.progetti-icon {
+  /* aumento dimensione */
+  font-size: 7em;
+  /* metto un margine superiore */
+  margin-top: 50px;
+}
+
+/*
+definisco la rule per la classe del sottotitolo
+progetti-subtitle
+*/
+.progetti-subtitle {
+  /* porto la dimensione del testo a 1.3em */
+  font-size: 1.3em;
+  /* aggiungo il margin top del 5% */
+  margin-top: 2%;
+}
+
+/*
+allargo il bottone di submit della mail al 100% del container 
+*/
+.btn-progetti {
+  width: 100%;
+}
+
+/*
+Definisco la formattazione a 4 colonne card per la sezione descr_prog
+*/
+.column-descr_prog {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/*
+Rimuovo extra margine destro e sinistro
+*/
+.row-descr_prog {
+  margin: 0 -5px;
+}
+
+/*
+Creo floats dopo le colonne
+*/
+.row-descr_prog:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+stile delle card
+*/ 
+.card-descr_prog {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* 
+Rendo responsive (mostra una colonna su piccoli schermi)
+*/
+@media screen and (max-width: 600px) {
+  .column-descr_prog {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*
+formattazione dell'icona email
+*/
+.contattami-icon {
+  /* aumento dimensione */
+  font-size: 7em;
+  /* metto un margine superiore */
+  margin-top: 60px;
+}
+
+
+.section-tempo_libero {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 100px
+}
+
+/*
+formattazione dell'icona tempo_libero
+*/
+.tempo_libero-icon {
+  /* aumento dimensione */
+  font-size: 7em;
+  /* metto un margine superiore */
+  margin-top: 50px;
+}
+
+/*
+definisco la rule per la classe del sottotitolo
+tempo_libero-subtitle
+*/
+.tempo_libero-subtitle {
+  /* porto la dimensione del testo a 1.3em */
+  font-size: 1.3em;
+  /* aggiungo il margin top del 5% */
+  margin-top: 2%;
+  /* aggiungo interlinea di 2em */
+  line-height: 2em;
+}
+
+/*
+allargo il bottone di submit della mail al 100% del container 
+*/
+.btn-tempo_libero {
+  width: 100%;
+}
+
+/*
+sezione gallery con foto
+*/
+
+.section-gallery {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 200px
+}
+
+.gallery body {
+  padding: 30px 0;
+  position: relative;
+}
+
+.gallery {
+  width: 600px;
+  margin: auto;
+  border-radius: 3px;
+  overflow: hidden;
+  //position: relative;
+}
+.img-c {
+  width: 200px;
+  height: 200px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+    transition: width ease 400ms, height ease 350ms, left cubic-bezier(0.4, 0, 0.2, 1) 420ms, top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.08);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 2;
+  //transform: translateX(-50%);
+}
+
+.img-c.postactive {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.img-c.active.positioned {
+  left: 0 !important;
+  top: 0 !important;
+  transition-delay: 50ms;
+}
+
+@media screen and (max-width: 600px) {
+  .gallery {
+    width: 250%;
+    top:0;
+  }
+}
+
+footer.page-footer {
+  margin-top: 50px;
+  height: 100%;
+  width: 100%;
+  /* aggiungo colore di sfondo della palette */
+  background-color: #003554;
+}
+
+/*
+stile dell'icona per l'invio mail
+*/
+.social-icon {
+  /* aumento dimensione */
+  font-size: 1.5em;
+  /* la coloro di bianco */
+  color: #fff;
+  /* aggiungo del padding laterale di 20px */
+  padding: 0 20px;
+}
+
+/*
+effetto di hover sulle icone
+*/
+.social-icon:hover {
+  color: #00A6FB;
+}
